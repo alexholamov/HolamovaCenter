@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HolamovaCenter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous" defer></script>
+    
+    <script src="src/script.js" defer></script>
+    
+</head>
+<body>
+
+<!--Панель навигации сайта-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <img src="images/logo/logo.svg" class="rounded-lg mr-5" alt="" width="40" height="auto">
+  <a class="navbar-brand mr-5" href="#">Меню <span class="text-success">holamova</span>center</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">О компании</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Услуги и цены</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Новости и акции</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container-fluid pt-4">
+    
+    <div class="d-flex justify-content-between pl-4 pr-4">
+        
+        <div class="d-flex flex-column align-items-center w-50">
+            
+            <!--Карусель со слайдами услуг-->
+            <div id="carouselExampleCaptions" class="carousel slide w-100 p-2 shadow mb-4 bg-white rounded" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              </ol>
+
+              <div class="carousel-inner">
+
+                <div class="carousel-item active" data-interval="3500">
+                  <img src="images/carusel/3.jpg" class="d-block w-100" alt="Фото автора Andrea Piacquadio: Pexels">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Бухгалтерские услуги</h3>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-interval="3500">
+                  <img src="images/carusel/1.jpg" class="d-block w-100" alt="Фото автора Christina Morillo: Pexels">
+                  <div class="carousel-caption d-none d-md-block bg-transparent text-white">
+                    <h3>Аренда юридического адреса</h3>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-interval="3500">
+                  <img src="images/carusel/2.jpg" class="d-block w-100" alt="Фото автора Lex Photography: Pexels">
+                  <div class="carousel-caption d-none d-md-block bg-transparent text-body">
+                    <h3>Регистрация организаций</h3>
+                  </div>
+                </div>
+
+                <div class="carousel-item" data-interval="3500">
+                  <img src="images/carusel/4.jpg" class="d-block w-100" alt="Фото автора Christina Morillo: Pexels">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h3>Аудиторские услуги</h3>
+                  </div>
+                </div>
+              </div>
+
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Назад</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Вперёд</span>
+              </a>
+
+            </div>
+            
+            <div class="pt-4 w-100">
+                <button type="button" class="btn btn-outline-warning" data-toggle="popover" title="Холамова-Центр -" data-content="это полный комплекс квалифицированных услуг по ведению бухгалтерского учета на аутсорсинге. Работать с нами удобно, надежно и выгодно!">Что мы предлагаем нашим клиентам:</button>
+                
+                <p></p>
+            </div>
+            
+        </div>
+        
+        <div class="w-25 d-flex flex-column align-items-center">
+            <div class="card w-100 d-flex flex-column align-items-center" style="width: 18rem;">
+                <img src="images/logo/logoText.png" class="card-img-top p-2" alt="Холамова-Центр">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Внимание!!! АКЦИЯ!</h5>
+                    <p class="card-text font-weight-bold text-secondary">ДВА первых месяца обслуживания - БЕСПЛАТНО!</p>
+                    <a href="#" class="btn btn-primary">Подробнее</a>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+        </div>
+        
+        
+       
+        <div>
+            <img src="images/holamova/1.svg" alt="Холамова Наталья Петровна">
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+</body>
+</html>
